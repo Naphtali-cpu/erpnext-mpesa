@@ -7,7 +7,6 @@ app_license = "mit"
 
 # Apps
 # ------------------
-
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
@@ -43,7 +42,9 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "POS Invoice": "public/js/pos_invoice.js"
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}

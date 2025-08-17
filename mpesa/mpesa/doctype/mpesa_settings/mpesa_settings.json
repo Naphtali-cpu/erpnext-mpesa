@@ -1,0 +1,85 @@
+{
+  "allow_rename": 1,
+  "creation": "2025-08-08 11:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "fields": [
+    {
+      "fieldname": "consumer_key",
+      "fieldtype": "Password",
+      "label": "Consumer Key",
+      "reqd": 1
+    },
+    {
+      "fieldname": "consumer_secret",
+      "fieldtype": "Password",
+      "label": "Consumer Secret",
+      "reqd": 1
+    },
+    {
+      "fieldname": "shortcode",
+      "fieldtype": "Data",
+      "label": "Shortcode",
+      "reqd": 1
+    },
+    {
+      "fieldname": "passkey",
+      "fieldtype": "Password",
+      "label": "Passkey",
+      "reqd": 1
+    },
+    {
+      "fieldname": "callback_url",
+      "fieldtype": "Data",
+      "label": "Callback URL",
+      "reqd": 1
+    },
+    {
+      "fieldname": "live_test_mode",
+      "fieldtype": "Select",
+      "label": "Live/Test Mode",
+      "options": "Live\nTest",
+      "default": "Test",
+      "reqd": 1
+    },
+    {
+      "fieldname": "access_token",
+      "fieldtype": "Data",
+      "label": "Access Token",
+      "read_only": 1
+    },
+    {
+      "fieldname": "token_expiry",
+      "fieldtype": "Datetime",
+      "label": "Token Expiry",
+      "read_only": 1
+    },
+    {
+      "fieldname": "test_phone_number",
+      "fieldtype": "Data",
+      "label": "Test Phone Number",
+      "description": "Used for testing STK push in Test mode. Must be in format 2547XXXXXXXX."
+    }
+  ],
+  "issingle": 1,
+  "modified": "2025-08-08 11:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Mpesa",
+  "name": "Mpesa Settings",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "print": 1,
+      "read": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "quick_entry": 1,
+  "track_changes": 1
+}
